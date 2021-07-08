@@ -7,6 +7,7 @@ RUN apt-get update && \
     apt-get -y install apt-transport-https \
       ca-certificates \
       curl \
+      pass \
       gnupg2 \
       software-properties-common && \
     curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg > /tmp/dkey; apt-key add /tmp/dkey && \
